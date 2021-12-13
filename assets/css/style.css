@@ -6,8 +6,11 @@
     --tertiary-color: 
 }
 
-header {
+body {
     font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
     padding: 25px 25px;
     background-color: var(--secondary-color);
     display: flex;
@@ -98,7 +101,7 @@ header nav ul li a {
     border-bottom: 5px solid;
     padding-bottom: 15px;
     text-align: center;
-    margin: 0 auto 25px auto;
+    margin: 25px auto 25px auto;
     width: 55%
 }
 
@@ -115,7 +118,7 @@ header nav ul li a {
 .main-proj {
     padding: 20px;
     margin: 20px;
-    height: 350px;
+    height: 375px;
     width: 425px;
     position: relative;
 }
@@ -129,9 +132,9 @@ header nav ul li a {
 .main-project-info {
     position: absolute;
     width: 200px;
-    height: 85px;
+    height: 100px;
     border: 5px solid var(--primary-color);
-    background: var(--secondary-color);
+    background: var(--primary-color);
     bottom: 10px;
     text-align: center;
     color: white;
@@ -140,9 +143,9 @@ header nav ul li a {
 .project-info {
     position: absolute;
     width: 150px;
-    height: 85px;
+    height: 100px;
     border: 5px solid var(--primary-color);
-    background: var(--secondary-color);
+    background: var(--primary-color);
     bottom: 10px;
     text-align: center;
     color: white;
@@ -151,7 +154,7 @@ header nav ul li a {
 .additional-projects {
     padding: 20px;
     margin: 20px;
-    height: 350px;
+    height: 375px;
     width: 250px;
     position: relative;
 }
@@ -195,3 +198,93 @@ header nav ul li a {
     text-decoration: none;
     color: white;
 }
+
+/* Media Query for smaller desktop screens and smaller*/
+@media screen and (max-width: 980px) {
+header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+}
+
+header h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.hero-info {
+    text-align: center;
+}
+
+.main-proj, .additional-projects {
+    flex: 0 70%;
+}
+}
+
+/* Media Query for tablets and smaller*/
+@media screen and (max-width: 768px) {
+
+.hero-info {
+    text-align: left;
+}
+
+.hero-info h1 {
+    font-size: 38px;
+}
+
+.contact-info {
+    margin: 10px;
+    font-size: 85%;
+    text-align: center;
+}
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+.main-proj, .additional-projects {
+    flex: 0 100%;
+}
+
+.contact-info {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    font-size: 8px;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+header nav ul li a {
+    font-size: 20px;;
+}
+
+.hero-info, .hero-photo {
+    width: 50%;
+}
+
+.hero-photo {
+    padding: 20px;
+    height: 300px;
+    width: 200px;
+}
+
+.hero-photo img {
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+}
+
+.hero-info h1 {
+    font-size: 20px;
+}
+
+.hero-info p {
+    font-size: 12px;
+}
+
+}
+
