@@ -2,14 +2,14 @@
 /*Create color scheme for page*/
 :root {
     --primary-color: #292C28;
-    --secondary-color: #DAF7A6;
+    --secondary-color: darkolivegreen;
     --tertiary-color: 
 }
 
 header {
     font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
     padding: 25px 25px;
-    background-color: darkolivegreen;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -63,34 +63,135 @@ header nav ul li a {
     line-height: 2;
 }
 
-
 .hero-info h1 {
     font-style: italic;
-    font-size: 50px;
+    font-size: 50px; 
     color: white;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.hero-info p {
-    
-}
-
 .hero-photo {
-    border: 3px solid darkolivegreen;
-    padding 20px;
+    /*border: 3px solid darkolivegreen;*/
+    padding: 20px;
     height: 345px;
     width: 250px;
 }
 
 .hero-photo img {
+    border-radius: 50%;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .flex-row {
     display: flex;
 }
 
+.flex-row h2 {
+    font-weight: bold;
+
+}
+
 .section-title {
-    width: 70%;
+    font-size: 40px;
+    color: var(--primary-color);
+    border-bottom: 5px solid;
+    padding-bottom: 15px;
+    text-align: center;
+    margin: 0 auto 25px auto;
+    width: 55%
+}
+
+.projects {
+    background:var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-around;
+
+}
+
+.main-proj {
+    padding: 20px;
+    margin: 20px;
+    height: 350px;
+    width: 425px;
+    position: relative;
+}
+
+.main-proj img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--primary-color);
+}
+
+.main-project-info {
+    position: absolute;
+    width: 200px;
+    height: 85px;
+    border: 5px solid var(--primary-color);
+    background: var(--secondary-color);
+    bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.project-info {
+    position: absolute;
+    width: 150px;
+    height: 85px;
+    border: 5px solid var(--primary-color);
+    background: var(--secondary-color);
+    bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.additional-projects {
+    padding: 20px;
+    margin: 20px;
+    height: 350px;
+    width: 250px;
+    position: relative;
+}
+
+.additional-projects img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--primary-color);
+}
+
+.contact {
+    background-image: url("../images/hero-bg.jfif");
+    background-size: cover;
+    height: 150px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 50%;
+    border: 2px solid;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 20px;
+}
+
+.contact-info h3 {
+    color: white;
+    font-weight: bold;
+    padding: 25px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: white;
 }
